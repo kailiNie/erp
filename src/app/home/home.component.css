@@ -1,0 +1,100 @@
+.wrapper {
+    width: 240px;
+  }
+
+  button {
+    margin-bottom: 12px;
+  }
+
+  /* .head{
+    height: 60px;
+    background: #001529;
+  } */
+
+  .panel {
+    display: fix;
+    display: -webkit-flex;
+    height: -webkit-calc(100% );
+    overflow:auto;
+  }
+
+  .menu {
+    max-width: 180px;
+    height: 100%;
+    background: #001529;
+    overflow:auto;
+  }
+
+  .content {
+       width: 100%;    
+  }
+
+  .conent-head {
+    background: white;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .conent-folter{
+      text-align: center;
+  }
+
+  .other {
+    position: absolute;
+    right: 23px;
+    /* top: -4px; */
+}
+
+.other span{
+    padding: 10px;
+}
+.phone-ionc-add{
+    position: absolute;
+    right: 27px;
+    top: 15px;
+}
+
+.demo_line{
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    border-left: 200px solid #ddd;
+    border-right: 200px solid #ddd;
+    text-align: center;
+}
+
+  .conent-body {
+    margin: 10px;
+    height:-webkit-calc(100% - 120px);
+    background: white;
+    border-radius: 10px;
+  }
+
+  .conent-filter {
+    margin:10px;
+    background: white;
+    border-radius: 10px;
+  }
+
+::ng-deep .ant-breadcrumb{
+    line-height: 80px;
+    padding-left: 10px;
+  }
+
+ ::-webkit-scrollbar{
+    width: 5px;
+}
+/*滚动槽*/
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+     background-color: rgba(255,255,255,0.8);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+  

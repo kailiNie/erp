@@ -1,0 +1,93 @@
+   <!-- <div class="head">
+        11111
+    </div> -->
+ <div class="panel">
+        <div class="menu">
+                        <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" style="margin-bottom: 10px;">
+                          <i nz-icon [type]="isCollapsed?'menu-unfold':'menu-fold'"></i>
+                        </button>
+                        <ul    nz-menu [nzMode]="'inline'" nzTheme='dark' [nzInlineCollapsed]="isCollapsed">
+                          <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''">
+                            <span title>
+                              <i nz-icon type="mail"></i>
+                              <span>手机型号</span>
+                            </span>
+                          </li>
+                          <li nz-submenu>
+                            <span title>
+                              <i nz-icon type="appstore"></i>
+                              <span>Navigation Two</span>
+                            </span>
+                            <ul>
+                              <li nz-menu-item>Option 5</li>
+                              <li nz-menu-item>Option 6</li>
+                              <li nz-submenu>
+                                <span title>Submenu</span>
+                                <ul>
+                                  <li nz-menu-item>Option 7</li>
+                                  <li nz-menu-item>Option 8</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li nz-submenu>
+                            <span title>
+                              <i nz-icon type="setting"></i>
+                              <span>Navigation Three</span>
+                            </span>
+                            <ul>
+                            
+                            </ul>
+                          </li>
+                        </ul>
+        </div>
+        <div class="content">
+
+            <div class="conent-head">
+                    <nz-breadcrumb >
+                            <nz-breadcrumb-item>
+                              <i nz-icon type="home"></i>
+                            </nz-breadcrumb-item>
+                            <nz-breadcrumb-item>
+                              <a><i nz-icon type="user"></i><span>Application List</span></a>
+                            </nz-breadcrumb-item>
+                            <nz-breadcrumb-item>
+                              Application
+                            </nz-breadcrumb-item>
+                            <span class="other">
+                                <span>
+                                    <i  class="icon iconfont  icon-touxiang"></i>  
+                                </span>
+                                <span  >
+                                    <i  class="icon iconfont icon-shezhi"></i>
+                                </span>   
+                                <span>
+                                    <i   class="icon iconfont  icon-tuichu "></i>
+                                </span>  
+                           </span>
+                    </nz-breadcrumb>
+ 
+            </div>
+
+            <div class="conent-body">
+                    <nz-card [nzTitle]="nzTitleTemplate">
+                            <div nz-card-grid [ngStyle]="gridStyle">苹果</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">华为</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">一加</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">小米</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">三星</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">OPPO</div>
+                            <div nz-card-grid [ngStyle]="gridStyle">VIVO</div>
+
+                        <ng-template #nzTitleTemplate>
+                            手机型号<i   class="icon iconfont icon-add phone-ionc-add"></i>
+                        </ng-template>
+                  </nz-card>
+            </div>
+
+            <div class="conent-folter">
+                   <span>版权所有 © 2018深圳市云端信联科技有限公司</span>
+            </div>
+
+        </div>
+  </div>
