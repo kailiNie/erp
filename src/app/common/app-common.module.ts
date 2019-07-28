@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import zh from '@angular/common/locales/zh';
+import { AppCommonService } from './app-common.service';
 registerLocaleData(zh);
 @NgModule({
   imports: [

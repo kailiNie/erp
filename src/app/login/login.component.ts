@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NzMessageService } from 'ng-zorro-antd';
 import { HttpClient } from "@angular/common/http"
 import { Router } from '@angular/router';
+import { AppCommonService } from '../common/app-common.service';
  
 
 @Component({
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
     constructor(private fb: FormBuilder,
         private http:HttpClient,
         private message: NzMessageService,
-        private router : Router
+        private router : Router,
+        private appCommon:AppCommonService
        ) {}
         
     submitForm(): void {
@@ -28,7 +30,8 @@ export class LoginComponent implements OnInit {
         .subscribe((res :any)=>{  
             const { status,message } = res;
             if(status == 100){
-                this.message.create('success', `${message}`);
+              this.appCommon.sucMessage(message);
+                // this.message.create('success', `${message}`);
                 this.router.navigate(['home']);
             }else{
                 this.message.create('error', `${message}`);

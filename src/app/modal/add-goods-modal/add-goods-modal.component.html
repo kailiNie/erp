@@ -1,0 +1,13 @@
+<nz-modal 
+    [(nzVisible)]="isVisible"
+     nzTitle="添加商品" 
+     (nzOnCancel)="handleCancel()" 
+     (nzOnOk)="handleOk()">
+    
+     <nz-input-group [nzSuffix]="suffixTemplate" [nzPrefix]="prefixTemplate">
+        <input type="text" nz-input placeholder="请输入商品" [(ngModel)]="goods">
+      </nz-input-group>
+          <ng-template #prefixTemplate><i nz-icon type="user"></i></ng-template>
+          <ng-template #suffixTemplate><i nz-icon type="close-circle" (click)="goods=null" *ngIf="goods"></i></ng-template>
+
+ </nz-modal>

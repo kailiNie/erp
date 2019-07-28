@@ -1,0 +1,24 @@
+<nz-card [nzTitle]="nzTitleTemplate">
+    <nz-skeleton [nzLoading]="loading">
+      <div  nz-card-grid *ngFor="let item of goodList" (click)="doSelect(item)">
+          <nz-badge [nzStatus]="item.status"></nz-badge> {{item.name}}      
+      </div>
+        
+      </nz-skeleton>
+  <ng-template #nzTitleTemplate>
+    手机型号
+    <i  nzTitle="查看详情" (click)="doRefresh()" nzPlacement="bottom" nz-tooltip class="icon iconfont icon-xiangqing"></i>
+    <i  nzTitle="清空" (click)="doRefresh()" nzPlacement="bottom" nz-tooltip class="icon iconfont icon-shanchu grid-qingkong"></i>
+    <i  nzTitle="刷新" (click)="doRefresh()" nzPlacement="bottom" nz-tooltip class="icon iconfont icon-shuaxin"></i>
+    <i  nzTitle="添加" (click)="doAdd()" nzPlacement="bottom" nz-tooltip class="icon iconfont icon-add"></i>
+    <!-- <i  nzTitle="清空" (click)="doAdd()" nzPlacement="bottom" nz-tooltip class="icon iconfont icon-add"></i> -->
+  </ng-template>
+</nz-card> 
+
+ 
+
+ 
+
+
+
+<app-add-goods-modal #goodlistmodal (modalEvent)="doAddGoodsModal(event)"></app-add-goods-modal>

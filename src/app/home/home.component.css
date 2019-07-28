@@ -5,12 +5,7 @@
   button {
     margin-bottom: 12px;
   }
-
-  /* .head{
-    height: 60px;
-    background: #001529;
-  } */
-
+ 
   .panel {
     display: fix;
     display: -webkit-flex;
@@ -49,11 +44,7 @@
 .other span{
     padding: 10px;
 }
-.phone-ionc-add{
-    position: absolute;
-    right: 27px;
-    top: 15px;
-}
+
 
 .demo_line{
     padding: 0 20px 0;
@@ -77,10 +68,6 @@
     border-radius: 10px;
   }
 
-::ng-deep .ant-breadcrumb{
-    line-height: 80px;
-    padding-left: 10px;
-  }
 
  ::-webkit-scrollbar{
     width: 5px;

@@ -17,8 +17,8 @@ registerLocaleData(zh);
   imports: [
     LoginModule,
     HomeModule,
-     AppRoutingModule,
-     AppCommonModule,
+    AppRoutingModule,
+    AppCommonModule,
   ],
   bootstrap: [AppComponent]
 })

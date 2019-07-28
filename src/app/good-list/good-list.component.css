@@ -1,0 +1,33 @@
+
+::ng-deep .ant-breadcrumb{
+    line-height: 80px;
+    padding-left: 10px;
+  }
+
+  .icon-add{
+    position: absolute;
+    right: 27px;
+    top: 15px;
+}
+
+.grid-qingkong{
+  position: absolute;
+  right: 92px;
+  top: 12px;
+  font-size: 20px;
+}
+
+.icon-xiangqing{
+  position: absolute;
+  right: 130px;
+  top: 12px;
+  font-size: 20px;
+}
+
+  .icon-shuaxin{
+    position: absolute;
+    right: 57px;
+    top: 12px;
+    font-size: 20px;
+
+  }
